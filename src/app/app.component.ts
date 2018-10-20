@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WordpressMetadataServiceService } from './wordpress-metadata-service.service';
+import { Post } from './post';
 
 @Component({
     selector: 'app-root',
@@ -8,7 +9,7 @@ import { WordpressMetadataServiceService } from './wordpress-metadata-service.se
 })
 export class AppComponent implements OnInit {
     title = 'RevisionStats';
-    data: any;
+    data: Post[];
 
     constructor(private wordpressMetadataServiceService: WordpressMetadataServiceService) { }
 
