@@ -2,11 +2,11 @@ import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/cor
 import { Post } from '../post';
 
 @Component({
-    selector: 'app-revisition-stat-chart',
-    templateUrl: './revisition-stat-chart.component.html',
-    styleUrls: ['./revisition-stat-chart.component.scss']
+    selector: 'app-revision-stat-chart',
+    templateUrl: './revision-stat-chart.component.html',
+    styleUrls: ['./revision-stat-chart.component.scss']
 })
-export class RevisitionStatChartComponent implements OnInit, OnChanges {
+export class RevisionStatChartComponent implements OnInit, OnChanges {
     @Input() data: Post[];
 
     results: any;

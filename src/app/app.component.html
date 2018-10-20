@@ -1,6 +1,15 @@
-<li *ngFor="let item of data">
-    {{item.id}} / {{item.title}} / {{item.revisions}} / {{item.creation_time}} / {{item.modification_time}}
-</li>
-
-<app-revisition-stat-chart [data]="data">
-</app-revisition-stat-chart>
+<ngb-tabset>
+  <ngb-tab title="Chart">
+    <ng-template ngbTabContent>
+        <app-revision-stat-chart [data]="data">
+        </app-revision-stat-chart>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Data">
+    <ng-template ngbTabContent>
+        <li *ngFor="let item of data">
+            {{item.id}} / {{item.title}} / {{item.revisions}} / {{item.creation_time}} / {{item.modification_time}}
+        </li>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
