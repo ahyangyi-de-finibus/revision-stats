@@ -23,7 +23,7 @@ export class WordpressMetadataServiceService {
     }
 
     getPosts(): Observable<Post[]> {
-        return this.http.get<any[]>("https://blog.ahyangyi.org/wp-json/wp/v2/posts").pipe(map(x => x.map(y => {return {
+        return this.http.get<any[]>("https://blog.ahyangyi.org/wp-json/wp/v2/posts?per_page=100").pipe(map(x => x.map(y => {return {
             id: y.id,
             title: y.title.rendered,
             revisions: y._links['version-history'][0].count,

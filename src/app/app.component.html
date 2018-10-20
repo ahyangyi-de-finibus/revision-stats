@@ -1,3 +1,6 @@
 <li *ngFor="let item of data">
     {{item.id}} / {{item.title}} / {{item.revisions}} / {{item.creation_time}} / {{item.modification_time}}
 </li>
+
+<app-revisition-stat-chart [data]="data">
+</app-revisition-stat-chart>
