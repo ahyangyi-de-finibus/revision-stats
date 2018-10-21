@@ -1,8 +1,10 @@
-<ngx-charts-bar-vertical
-    *ngIf="results"
-    [results]="results"
-    [roundEdges]=false
-    [showYAxisLabel]=true
-    [yAxisLabel]="'Posts'"
-    [yAxis]=true
-></ngx-charts-bar-vertical>
+<div style="display: grid; height:400px">
+    <ngx-charts-bar-vertical
+        *ngIf="results"
+        [results]="results"
+        [roundEdges]=false
+        [showYAxisLabel]=true
+        [yAxisLabel]="'Posts'"
+        [yAxis]=true
+    ></ngx-charts-bar-vertical>
+</div>
