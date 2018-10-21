@@ -3,7 +3,7 @@ import { WordpressMetadataServiceService } from './wordpress-metadata-service.se
 import { Post } from './post';
 
 @Component({
-    selector: 'app-root',
+    selector: 'revision-stats',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })

@@ -7,9 +7,8 @@
   </ngb-tab>
   <ngb-tab title="Data">
     <ng-template ngbTabContent>
-        <li *ngFor="let item of data">
-            {{item.id}} / {{item.title}} / {{item.revisions}} / {{item.creation_time}} / {{item.modification_time}}
-        </li>
+        <app-revision-stat-table [data]="data">
+        </app-revision-stat-table>
     </ng-template>
   </ngb-tab>
 </ngb-tabset>
