@@ -1,4 +1,8 @@
 // A simple subset of default Bootstrap theme.
+.nav-tabs {
+    margin: 0em;
+    border-bottom: 1px solid #dee2e6;
+}
 
 .nav-tabs .nav-link {
     border: 1px solid transparent;
@@ -29,8 +33,4 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-}
-
-.nav-tabs {
-    border-bottom: 1px solid #dee2e6;
 }
