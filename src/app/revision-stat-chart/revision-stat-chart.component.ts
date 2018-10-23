@@ -12,18 +12,15 @@ export class RevisionStatChartComponent implements OnInit, OnChanges {
     results: any;
     scheme = {
         'domain': [
-            '#63B2FF', // A400
-            '#165A94', // 900
-            '#96CBFF', // A200
-            '#378ABA', // 500
-            '#C3DCEA', // 100
-            '#49A6FF', // A700
-            '#559CC4', // 400
-            '#236DA3', // 800
-            '#73ADCF', // 300
-            '#2A77AB', // 700
-            '#9BC5DD', // 200
-            '#3182B3', // 600
+            "#378aba", // 700
+            "#68c3e4", // 300
+            "#3f9dcd", // 600
+            "#8cd4ec", // 200
+            "#3379a6", // 800
+            "#53b7e0", // 400
+            "#285a84", // 900
+            "#46aadb", // 500
+            "#b8e5f3", // 100
         ],
         }
 
