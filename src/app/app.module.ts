@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BarChartModule } from '@swimlane/ngx-charts/release/bar-chart';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,7 +19,7 @@ import { RevisionStatTableComponent } from './revision-stat-table/revision-stat-
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
-        NgxChartsModule,
+        BarChartModule,
         NgbTabsetModule
     ],
     providers: [],
